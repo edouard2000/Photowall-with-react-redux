@@ -27,19 +27,22 @@ function Main() {
     };
 
     return (
-        <div className="photoGrid">
+        <div className="App">
             <Title title={"Photo wall"} />
-            {posts.map((post) => (
-                <div key={post.id} className="photoBox">
-                    <figure className="figure">
-                        <img src={post.imageLink} alt={post.description} className="photoImage"/>
-                        <figcaption className="photoCaption">{post.description}</figcaption>
-                    </figure>
-                    <button className="removeButton" onClick={() => removePhoto(post.id)}>
-                        Remove
-                    </button>
-                </div>
-            ))}
+
+            <div className="photoGrid">
+                {posts.map((post) => (
+                    <div key={post.id} className="photoBox">
+                        <figure className="figure">
+                            <img src={post.imageLink} alt={post.description} className="photoImage"/>
+                            <figcaption className="photoCaption">{post.description}</figcaption>
+                        </figure>
+                        <button className="removeButton" onClick={() => removePhoto(post.id)}>
+                            Remove
+                        </button>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
