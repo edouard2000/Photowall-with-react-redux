@@ -1,12 +1,8 @@
-import { divide } from "lodash";
-import React from "react";
+import React from 'react'
 
-function Title(props){
-    return(
-        <div className="photoWallTitle">
-            <h1 >{props.title}</h1>
-        </div>
-    )
+function Title(props) {
+    return  <h1> {props.title} </h1>
+    
 }
 
-export default Title;
+export default Title
