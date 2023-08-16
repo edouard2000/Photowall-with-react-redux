@@ -66,9 +66,10 @@ button {
     margin: 20px auto;
     display: table;
     padding: 40px;
-    background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
-    background-size: contain;
+    background: url("https://cdn-icons-png.flaticon.com/512/63/63747.png") center no-repeat;
+   border-radius: 30px;
     border: none;
+    background-color: #065784;
 }
 
 .form  {
@@ -110,3 +111,26 @@ button:hover {
     border-color: blue;
 }
 
+.addPhotoLink {
+    text-decoration: none; 
+    color: #dce1e4; 
+    font-size: 18px; 
+    margin: 20px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color: #3e205f; 
+    cursor: pointer; 
+    transition: 0.3s;
+ 
+}
+
+.addPhotoLink:hover {
+    background-color: #5d1111;
+}
+
+.addPhotoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
